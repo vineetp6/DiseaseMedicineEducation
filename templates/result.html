@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Congratulations!</h2>
+<p>You have successfully completed the quiz.</p>
+<div id="animation"></div>
+<script src="{{ url_for('static', filename='animation.js') }}"></script>
+{% endblock %}

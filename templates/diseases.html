@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Diseases{% endblock %}
+
+{% block content %}
+    <h2>Diseases</h2>
+    <ul>
+        {% for disease in diseases %}
+            <li>
+                <a href="{{ url_for('disease', disease_id=disease[0]) }}">{{ disease[1] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

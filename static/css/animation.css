@@ -1,0 +1,15 @@
+/* Define the animation */
+@keyframes congrat {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply the animation to an element */
+.congratulations {
+    animation: congrat 2s infinite;
+    font-size: 2em;
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
